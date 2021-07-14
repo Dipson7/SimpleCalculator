@@ -4,10 +4,11 @@ from tkinter import *
 MyCal = Tk()
 MyCal.configure(bg='black')
 
-# Title of the project
-MyCal.title('My Calculator')
+# Title and icon of the project
+MyCal.title('                                                                     D Best Calculator')
 MyCal.iconbitmap('C:/Users/dipso/OneDrive/Pictures/Softwarica/C.ico')
 
+# defining entry box
 e = Entry(
     MyCal,
     width=20,
@@ -16,9 +17,10 @@ e = Entry(
     fg='lawn green',
     bg='black',
     )
+# putting entry box on screen
 e.grid(row=0, column=0, columnspan=5, padx=10, pady=10)
 
-
+# button function
 def button_click(number):
     current = e.get()
     e.delete(0, END)
@@ -26,20 +28,18 @@ def button_click(number):
 
 
 # equals to function
-
 def button_equal():
     cal = str(e.get())  # store value of entry in cal
     total = eval(cal)  # runs the python which is passed as an argument
     e.delete(0, END)  # delete the value in entry
     e.insert(0, total)  # inserts the value in entry
 
-
+# clear function
 def clear_but():
     e.delete(0, END)  # clears the entry in the screen
 
 
 # Defining the buttons
-
 button_1 = Button(
     MyCal,
     text='1',
@@ -260,7 +260,6 @@ button_power = Button(
     )
 
 # Putting buttons on the screen
-
 button_7.grid(row=2, column=2, ipadx=40, ipady=20)
 button_8.grid(row=2, column=3, ipadx=40, ipady=20)
 button_9.grid(row=3, column=0, ipadx=40, ipady=20)
