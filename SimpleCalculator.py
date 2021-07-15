@@ -21,7 +21,7 @@ e = Entry(
 e.grid(row=0, column=0, columnspan=5, padx=10, pady=10)
 
 # button function
-def button_click(number):
+def button_num(number):
     current = e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(number))  # adding two strings
@@ -43,7 +43,7 @@ def clear_but():
 button_1 = Button(
     MyCal,
     text='1',
-    command=lambda: button_click(1),
+    command=lambda: button_num(1),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -54,7 +54,7 @@ button_1 = Button(
 button_2 = Button(
     MyCal,
     text='2',
-    command=lambda: button_click(2),
+    command=lambda: button_num(2),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -65,7 +65,7 @@ button_2 = Button(
 button_3 = Button(
     MyCal,
     text='3',
-    command=lambda: button_click(3),
+    command=lambda: button_num(3),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -76,7 +76,7 @@ button_3 = Button(
 button_4 = Button(
     MyCal,
     text='4',
-    command=lambda: button_click(4),
+    command=lambda: button_num(4),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -88,7 +88,7 @@ button_4 = Button(
 button_5 = Button(
     MyCal,
     text='5',
-    command=lambda: button_click(5),
+    command=lambda: button_num(5),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -100,7 +100,7 @@ button_5 = Button(
 button_6 = Button(
     MyCal,
     text='6',
-    command=lambda: button_click(6),
+    command=lambda: button_num(6),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -112,7 +112,7 @@ button_6 = Button(
 button_7 = Button(
     MyCal,
     text='7',
-    command=lambda: button_click(7),
+    command=lambda: button_num(7),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -124,7 +124,7 @@ button_7 = Button(
 button_8 = Button(
     MyCal,
     text='8',
-    command=lambda: button_click(8),
+    command=lambda: button_num(8),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -136,7 +136,7 @@ button_8 = Button(
 button_9 = Button(
     MyCal,
     text='9',
-    command=lambda: button_click(9),
+    command=lambda: button_num(9),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -148,7 +148,7 @@ button_9 = Button(
 button_0 = Button(
     MyCal,
     text='0',
-    command=lambda: button_click(0),
+    command=lambda: button_num(0),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -160,7 +160,7 @@ button_0 = Button(
 button_add = Button(
     MyCal,
     text='+',
-    command=lambda: button_click('+'),
+    command=lambda: button_num('+'),
     font=('georgia', 30),
     fg='lawn green',
     bg='black',
@@ -197,7 +197,7 @@ button_clear = Button(
 button_sub = Button(
     MyCal,
     text='-',
-    command=lambda: button_click('-'),
+    command=lambda: button_num('-'),
     font=('georgia', 20),
     width=3,
     fg='lawn green',
@@ -210,7 +210,7 @@ button_sub = Button(
 button_mul = Button(
     MyCal,
     text='*',
-    command=lambda: button_click('*'),
+    command=lambda: button_num('*'),
     font=('georgia', 20),
     width=3,
     fg='lawn green',
@@ -223,7 +223,7 @@ button_mul = Button(
 button_div = Button(
     MyCal,
     text='/',
-    command=lambda : button_click('/'),
+    command=lambda : button_num('/'),
     font=('georgia', 20),
     width=3,
     fg='lawn green',
@@ -236,7 +236,7 @@ button_div = Button(
 button_mod = Button(
     MyCal,
     text='Mod',
-    command=lambda : button_click('%'),
+    command=lambda : button_num('%'),
     font=('georgia', 20),
     width=3,
     fg='lawn green',
@@ -249,7 +249,7 @@ button_mod = Button(
 button_power = Button(
     MyCal,
     text='^',
-    command=lambda : button_click('**'),
+    command=lambda : button_num('**'),
     font=('georgia', 20),
     width=3,
     fg='lawn green',
